@@ -1,0 +1,2566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Samruddhi Dhurai | IT Portfolio</title>
+
+   <style>
+
+    /* =====================================================
+   SAMRUDDHI DHURAI
+   ADVANCED PERSONAL PORTFOLIO
+   CSS3
+   ===================================================== */
+
+
+/* ---------- BASIC RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+
+    --background: #07111f;
+
+    --dark: #0b1729;
+
+    --card: #0f1e32;
+
+    --card-light: #12243c;
+
+    --text: #edf7ff;
+
+    --muted: #9fb2c7;
+
+    --line: rgba(157,190,219,0.16);
+
+    --blue: #38bdf8;
+
+    --purple: #a78bfa;
+
+    --green: #4ade80;
+
+    --white: #ffffff;
+
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(56,189,248,0.12),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 90% 30%,
+            rgba(167,139,250,0.12),
+            transparent 30%
+        ),
+
+        var(--background);
+
+    color: var(--text);
+
+    line-height: 1.7;
+
+    overflow-x: hidden;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+button,
+input,
+select,
+textarea {
+
+    font-family: inherit;
+
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+
+    width: 92%;
+
+    max-width: 1180px;
+
+    margin: auto;
+
+    min-height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--line);
+
+}
+
+
+.logo {
+
+    font-size: 1.2rem;
+
+    font-weight: bold;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.logo span {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 12px;
+
+    color: #06101d;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--blue),
+            var(--purple)
+        );
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 5px;
+
+}
+
+
+.nav-links a {
+
+    display: block;
+
+    padding: 9px 12px;
+
+    border-radius: 10px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    transition: 0.3s;
+
+}
+
+
+.nav-links a:hover {
+
+    color: var(--white);
+
+    background: rgba(255,255,255,0.07);
+
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+
+    width: 92%;
+
+    max-width: 1180px;
+
+    min-height: calc(100vh - 82px);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 60px;
+
+}
+
+
+.small-title {
+
+    color: var(--blue);
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    margin-bottom: 18px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(
+        50px,
+        7vw,
+        92px
+    );
+
+    line-height: 1;
+
+    letter-spacing: -4px;
+
+}
+
+
+.hero h1 span {
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--blue),
+            var(--purple)
+        );
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+
+}
+
+
+.hero h2 {
+
+    font-size: 25px;
+
+    margin-top: 25px;
+
+    color: #dceafa;
+
+}
+
+
+.hero-text {
+
+    max-width: 650px;
+
+    color: var(--muted);
+
+    margin-top: 18px;
+
+}
+
+
+.buttons {
+
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.btn {
+
+    padding: 13px 20px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.primary {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--blue),
+            #60a5fa
+        );
+
+    color: #06101d;
+
+}
+
+
+.primary:hover {
+
+    transform: translateY(-4px);
+
+}
+
+
+.secondary {
+
+    border: 1px solid var(--line);
+
+    background: rgba(255,255,255,0.03);
+
+}
+
+
+.secondary:hover {
+
+    background: rgba(255,255,255,0.08);
+
+}
+
+
+.stats {
+
+    display: flex;
+
+    gap: 45px;
+
+    margin-top: 45px;
+
+}
+
+
+.stats h3 {
+
+    font-size: 25px;
+
+}
+
+
+.stats p {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+/* ---------- PROFILE ---------- */
+
+.profile-container {
+
+    min-height: 520px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+}
+
+
+.profile-card {
+
+    width: 360px;
+
+    padding: 17px;
+
+    border-radius: 28px;
+
+    background:
+        rgba(15,30,50,0.75);
+
+    border: 1px solid var(--line);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.35);
+
+    transform: rotate(2deg);
+
+}
+
+
+.profile-top {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    padding-bottom: 12px;
+
+}
+
+
+.online {
+
+    display: inline-block;
+
+    width: 8px;
+
+    height: 8px;
+
+    background: var(--green);
+
+    border-radius: 50%;
+
+    margin-right: 7px;
+
+}
+
+
+.profile-card img {
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+}
+
+
+.profile-card h3 {
+
+    margin-top: 17px;
+
+    font-size: 22px;
+
+}
+
+
+.profile-card p {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+.floating {
+
+    position: absolute;
+
+    padding: 10px 15px;
+
+    border-radius: 12px;
+
+    background: rgba(8,17,31,0.9);
+
+    border: 1px solid var(--line);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+.python {
+
+    top: 17%;
+
+    right: 4%;
+
+}
+
+
+.html {
+
+    bottom: 20%;
+
+    left: 2%;
+
+}
+
+
+.logic {
+
+    bottom: 10%;
+
+    right: 8%;
+
+}
+
+
+/* ---------- SECTIONS ---------- */
+
+.section {
+
+    padding: 110px 4%;
+
+    border-bottom: 1px solid var(--line);
+
+}
+
+
+.section > * {
+
+    max-width: 1180px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+
+.section-title {
+
+    margin-bottom: 55px;
+
+}
+
+
+.section-title > p:first-child {
+
+    color: var(--blue);
+
+    letter-spacing: 3px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+.section-title h2 {
+
+    font-size: clamp(
+        35px,
+        5vw,
+        62px
+    );
+
+    line-height: 1.1;
+
+    margin-top: 12px;
+
+    letter-spacing: -2px;
+
+}
+
+
+.section-title h2 span {
+
+    color: var(--blue);
+
+}
+
+
+.section-title > p:last-child {
+
+    color: var(--muted);
+
+    margin-top: 15px;
+
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 1fr 1fr;
+
+    gap: 18px;
+
+}
+
+
+.about-box {
+
+    padding: 28px;
+
+    min-height: 230px;
+
+    border:
+        1px solid var(--line);
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.055),
+            rgba(255,255,255,0.015)
+        );
+
+    transition: 0.3s;
+
+}
+
+
+.about-box:hover {
+
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(56,189,248,0.4);
+
+}
+
+
+.about-box.large {
+
+    grid-row: span 2;
+
+}
+
+
+.about-box h3 {
+
+    font-size: 21px;
+
+    margin: 13px 0;
+
+}
+
+
+.about-box h4 {
+
+    margin-top: 10px;
+
+}
+
+
+.about-box p {
+
+    color: var(--muted);
+
+    margin-top: 7px;
+
+}
+
+
+.about-box small {
+
+    color: var(--blue);
+
+}
+
+
+.about-box ul {
+
+    list-style: none;
+
+    color: var(--muted);
+
+    margin-top: 12px;
+
+}
+
+
+.about-box li {
+
+    margin: 6px 0;
+
+}
+
+
+.about-box li::before {
+
+    content: "→";
+
+    color: var(--blue);
+
+    margin-right: 8px;
+
+}
+
+
+.icon {
+
+    font-size: 25px;
+
+}
+
+
+/* ---------- DARK SECTION ---------- */
+
+.dark {
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.015) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.015) 1px,
+            transparent 1px
+        ),
+
+        var(--dark);
+
+    background-size: 45px 45px;
+
+}
+
+
+/* ---------- SKILLS ---------- */
+
+.skills-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 18px;
+
+}
+
+
+.skill-card {
+
+    padding: 27px;
+
+    border:
+        1px solid var(--line);
+
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,0.035);
+
+    transition: 0.3s;
+
+}
+
+
+.skill-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(56,189,248,0.4);
+
+}
+
+
+.skill-icon {
+
+    width: 54px;
+
+    height: 54px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(56,189,248,.18),
+            rgba(167,139,250,.18)
+        );
+
+    font-weight: bold;
+
+}
+
+
+.skill-card > span {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    margin-top: 20px;
+
+}
+
+
+.skill-card h3 {
+
+    font-size: 20px;
+
+    margin: 8px 0;
+
+}
+
+
+.skill-card p {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    min-height: 80px;
+
+}
+
+
+.progress {
+
+    height: 5px;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    border-radius: 50px;
+
+    margin-top: 20px;
+
+}
+
+
+.progress div {
+
+    height: 100%;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--blue),
+            var(--purple)
+        );
+
+}
+
+
+/* ---------- EDUCATION TABLE ---------- */
+
+.table-container {
+
+    overflow-x: auto;
+
+    border: 1px solid var(--line);
+
+    border-radius: 22px;
+
+}
+
+
+table {
+
+    width: 100%;
+
+    min-width: 850px;
+
+    border-collapse: collapse;
+
+}
+
+
+th,
+td {
+
+    padding: 20px;
+
+    text-align: left;
+
+    border-bottom: 1px solid var(--line);
+
+}
+
+
+th {
+
+    color: var(--blue);
+
+    background:
+        rgba(56,189,248,0.06);
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+}
+
+
+td {
+
+    color: var(--muted);
+
+}
+
+
+td strong {
+
+    color: var(--text);
+
+}
+
+
+/* ---------- PROJECTS ---------- */
+
+.projects-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.3fr 1fr 1fr;
+
+    gap: 18px;
+
+}
+
+
+.project-card {
+
+    min-height: 300px;
+
+    padding: 28px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,0.035);
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: .3s;
+
+}
+
+
+.project-card:hover {
+
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(56,189,248,.4);
+
+}
+
+
+.project-card > span {
+
+    color: var(--blue);
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: bold;
+
+}
+
+
+.project-card h3 {
+
+    font-size: 23px;
+
+    margin: 18px 0 10px;
+
+}
+
+
+.project-card p {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+}
+
+
+.tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: auto;
+
+    padding-top: 25px;
+
+}
+
+
+.tags span {
+
+    padding: 6px 10px;
+
+    border:
+        1px solid var(--line);
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+}
+
+
+/* ---------- ACTIVITIES ---------- */
+
+.activities {
+
+    border-top: 1px solid var(--line);
+
+}
+
+
+.activity {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr 1fr;
+
+    gap: 30px;
+
+    padding: 28px 5px;
+
+    border-bottom: 1px solid var(--line);
+
+}
+
+
+.activity-name {
+
+    display: flex;
+
+    gap: 18px;
+
+    align-items: center;
+
+}
+
+
+.activity-name span {
+
+    color: var(--blue);
+
+    font-weight: bold;
+
+}
+
+
+.activity p {
+
+    color: var(--muted);
+
+}
+
+
+.activity strong {
+
+    font-weight: normal;
+
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.contact {
+
+    background:
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(56,189,248,.11),
+            transparent 25%
+        );
+}
+
+
+.contact-container {
+
+    max-width: 1180px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        .85fr 1.15fr;
+
+    gap: 70px;
+
+}
+
+
+.contact-info h2 {
+
+    font-size: clamp(
+        35px,
+        5vw,
+        58px
+    );
+
+    line-height: 1.05;
+
+}
+
+
+.contact-info h2 span {
+
+    color: var(--blue);
+
+}
+
+
+.contact-info > p:not(.small-title) {
+
+    color: var(--muted);
+
+    margin-top: 18px;
+
+}
+
+
+.details {
+
+    display: grid;
+
+    gap: 14px;
+
+    margin-top: 30px;
+
+}
+
+
+.details > *,
+.details a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 14px;
+
+    background:
+        rgba(255,255,255,.025);
+
+}
+
+
+.details span {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.details small {
+
+    color: #71869d;
+
+    font-size: 11px;
+
+}
+
+
+.contact-form {
+
+    padding: 28px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,.035);
+
+}
+
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+
+}
+
+
+.contact-form label {
+
+    display: block;
+
+    color: #c9d8e7;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 17px;
+
+}
+
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+
+    width: 100%;
+
+    margin-top: 7px;
+
+    padding: 12px;
+
+    border:
+        1px solid var(--line);
+
+    border-radius: 10px;
+
+    background: #091525;
+
+    color: white;
+
+    outline: none;
+
+}
+
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+
+    border-color: var(--blue);
+
+}
+
+
+.form-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+}
+
+
+.form-buttons button {
+
+    padding: 12px 18px;
+
+    border-radius: 11px;
+
+    border: 0;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+
+.form-buttons button:first-child {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--blue),
+            #60a5fa
+        );
+
+}
+
+
+.form-buttons button:last-child {
+
+    color: white;
+
+    background:
+        rgba(255,255,255,.08);
+
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+
+    background: #050c16;
+
+    padding: 45px 4% 25px;
+
+}
+
+
+.footer-container {
+
+    max-width: 1180px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr auto auto;
+
+    gap: 35px;
+
+}
+
+
+.footer-logo {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--blue),
+            var(--purple)
+        );
+
+    color: #06101d;
+
+    border-radius: 11px;
+
+    font-weight: bold;
+
+}
+
+
+.footer-container h3 {
+
+    margin-top: 12px;
+
+}
+
+
+.footer-container p {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+.footer-links,
+.social {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.footer-links a,
+.social a {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+.footer-links a:hover,
+.social a:hover {
+
+    color: var(--blue);
+
+}
+
+
+.social a {
+
+    border:
+        1px solid var(--line);
+
+    padding: 7px 11px;
+
+    border-radius: 8px;
+
+}
+
+
+.copyright {
+
+    max-width: 1180px;
+
+    margin: 30px auto 0;
+
+    padding-top: 25px;
+
+    border-top: 1px solid var(--line);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #65788c;
+
+    font-size: 12px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+
+@media(max-width:1050px) {
+
+    .nav-links {
+
+        gap: 0;
+
+    }
+
+
+    .nav-links a {
+
+        padding:
+            8px;
+
+        font-size:
+            12px;
+
+    }
+
+
+    .skills-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+
+    .projects-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+
+@media(max-width:800px) {
+
+    .navbar {
+
+        min-height:
+            70px;
+
+    }
+
+
+    .nav-links {
+
+        display:
+            none;
+
+    }
+
+
+    .hero {
+
+        grid-template-columns:
+            1fr;
+
+        text-align:
+            center;
+
+        padding:
+            70px 0;
+
+    }
+
+
+    .hero-text {
+
+        margin:
+            auto;
+
+    }
+
+
+    .buttons,
+    .stats {
+
+        justify-content:
+            center;
+
+    }
+
+
+    .profile-container {
+
+        min-height:
+            450px;
+
+    }
+
+
+    .about-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .about-box.large {
+
+        grid-column:
+            1 / -1;
+
+        grid-row:
+            auto;
+
+    }
+
+
+    .activity {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            10px;
+
+    }
+
+
+    .contact-container {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .footer-container {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+
+@media(max-width:560px) {
+
+    .section {
+
+        padding:
+            75px 5%;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            48px;
+
+        letter-spacing:
+            -2px;
+
+    }
+
+
+    .hero h2 {
+
+        font-size:
+            20px;
+
+    }
+
+
+    .stats {
+
+        gap:
+            25px;
+
+    }
+
+
+    .skills-grid,
+    .about-grid,
+    .projects-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .form-row {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .profile-card {
+
+        width:
+            310px;
+
+        transform:
+            none;
+
+    }
+
+
+    .floating {
+
+        font-size:
+            10px;
+
+    }
+
+
+    .python {
+
+        right:
+            0;
+
+    }
+
+
+    .html {
+
+        left:
+            0;
+
+    }
+
+
+    .logic {
+
+        right:
+            0;
+
+    }
+
+
+    .copyright {
+
+        flex-direction:
+            column;
+
+    }
+
+}
+   </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header id="home">
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>SD</span>
+            Samruddhi.
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-title">IT STUDENT • RAMTEK, MAHARASHTRA</p>
+
+            <h1>
+                Hi, I'm
+                <span>Samruddhi Dhurai</span>
+            </h1>
+
+            <h2>
+                Learning today. Building for tomorrow.
+            </h2>
+
+            <p>
+                I am an IT student at Ratan Tata Maharashtra State Skills
+                University, developing practical skills in programming,
+                web technology, computer networks and digital electronics.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#contact" class="btn primary">
+                    Contact Me ↗
+                </a>
+
+                <a href="#projects" class="btn secondary">
+                    Explore Portfolio
+                </a>
+
+            </div>
+
+            <div class="stats">
+
+                <div>
+                    <h3>85%</h3>
+                    <p>10th</p>
+                </div>
+
+                <div>
+                    <h3>68%</h3>
+                    <p>12th</p>
+                </div>
+
+                <div>
+                    <h3>IT</h3>
+                    <p>Course</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-container">
+
+            <div class="profile-card">
+
+                <div class="profile-top">
+                    <span class="online"></span>
+                    Student Profile
+                </div>
+
+                <img src="tai.jpeg"
+                     alt="Samruddhi Dhurai">
+
+                <h3>Samruddhi Dhurai</h3>
+
+                <p>
+                    IT Student • Aspiring Tech Professional
+                </p>
+
+            </div>
+
+            <div class="floating python">
+                Python
+            </div>
+
+            <div class="floating html">
+                HTML & CSS
+            </div>
+
+            <div class="floating logic">
+                Problem Solving
+            </div>
+
+        </div>
+
+    </section>
+
+</header>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+    <div class="section-title">
+
+        <p>01 / ABOUT ME</p>
+
+        <h2>
+            A curious learner with a
+            <span>technology-first mindset.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-box large">
+
+            <small>01</small>
+
+            <h3>Who I Am</h3>
+
+            <p>
+                I am Samruddhi Dhurai from Ramtek, Maharashtra.
+                I am pursuing an IT course and continuously improving
+                my technical, logical and presentation skills through
+                assignments, practical work, workshops and coding activities.
+            </p>
+
+            <p>
+                My goal is to build a strong foundation in Information
+                Technology, gain practical experience and grow into
+                a capable technology professional.
+            </p>
+
+        </div>
+
+
+        <div class="about-box">
+
+            <div class="icon">🎓</div>
+
+            <h3>Current Course</h3>
+
+            <h4>IT</h4>
+
+            <p>
+                Ratan Tata Maharashtra State Skills University
+            </p>
+
+        </div>
+
+
+        <div class="about-box">
+
+            <div class="icon">🏫</div>
+
+            <h3>Academic Background</h3>
+
+            <h4>Samarth Junior College</h4>
+
+            <p>Ramtek — 11th & 12th</p>
+
+            <h4>Samarth High School</h4>
+
+            <p>Ramtek — 10th</p>
+
+        </div>
+
+
+        <div class="about-box">
+
+            <div class="icon">🎯</div>
+
+            <h3>Career Goal</h3>
+
+            <p>
+                To develop practical IT skills and create useful
+                technology solutions.
+            </p>
+
+        </div>
+
+
+        <div class="about-box">
+
+            <div class="icon">✨</div>
+
+            <h3>Interests</h3>
+
+            <ul>
+                <li>Learning technology</li>
+                <li>Programming practice</li>
+                <li>Creative presentations</li>
+                <li>Problem solving</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section dark">
+
+    <div class="section-title">
+
+        <p>02 / HARD SKILLS</p>
+
+        <h2>
+            Skills I am
+            <span>building step by step.</span>
+        </h2>
+
+        <p>
+            Technical and practical skills that support my IT learning journey.
+        </p>
+
+    </div>
+
+
+    <div class="skills-grid">
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                Py
+            </div>
+
+            <span>01 • BEGINNER</span>
+
+            <h3>Basic Python Programming</h3>
+
+            <p>
+                Understanding basic syntax, variables, conditions,
+                loops and simple problem-solving programs.
+            </p>
+
+            <div class="progress">
+                <div style="width:72%"></div>
+            </div>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                &lt;/&gt;
+            </div>
+
+            <span>02 • BEGINNER</span>
+
+            <h3>Basic HTML & CSS</h3>
+
+            <p>
+                Creating structured web pages and applying styling,
+                layouts, spacing, colours and responsive design.
+            </p>
+
+            <div class="progress">
+                <div style="width:75%"></div>
+            </div>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                NET
+            </div>
+
+            <span>03 • BASIC</span>
+
+            <h3>Computer Networks</h3>
+
+            <p>
+                Basic understanding of networking concepts,
+                communication, devices and network fundamentals.
+            </p>
+
+            <div class="progress">
+                <div style="width:62%"></div>
+            </div>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                DE
+            </div>
+
+            <span>04 • BASIC</span>
+
+            <h3>Digital Electronics</h3>
+
+            <p>
+                Basic knowledge of digital concepts, electronic
+                components and logical operations.
+            </p>
+
+            <div class="progress">
+                <div style="width:60%"></div>
+            </div>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                MS
+            </div>
+
+            <span>05 • PRACTICAL</span>
+
+            <h3>MS Word & PowerPoint</h3>
+
+            <p>
+                Preparing formatted documents, assignments and
+                clear presentation slides.
+            </p>
+
+            <div class="progress">
+                <div style="width:82%"></div>
+            </div>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                ◎
+            </div>
+
+            <span>06 • GROWING</span>
+
+            <h3>Problem Solving</h3>
+
+            <p>
+                Practising logical thinking, step-by-step analysis
+                and simple programming problem solving.
+            </p>
+
+            <div class="progress">
+                <div style="width:70%"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education" class="section">
+
+    <div class="section-title">
+
+        <p>03 / EDUCATION</p>
+
+        <h2>
+            My <span>academic journey.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Board / University</th>
+                    <th>Passing Year</th>
+                    <th>Percentage</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        <strong>IT Course</strong>
+                    </td>
+
+                    <td>
+                        Ratan Tata Maharashtra State Skills University
+                    </td>
+
+                    <td>
+                        Ratan Tata Maharashtra State Skills University,Nagpur
+                    </td>
+
+                    <td>
+                        Ongoing
+                    </td>
+
+                    <td>
+                        —
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <strong>12th</strong>
+                    </td>
+
+                    <td>
+                        Samarth Junior College, Ramtek
+                    </td>
+
+                    <td>
+                        HSC BOARD
+                    </td>
+
+                    <td>
+                       2025-2026
+                    </td>
+
+                    <td>
+                        <strong>68%</strong>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <strong>10th</strong>
+                    </td>
+
+                    <td>
+                        Samarth High School, Ramtek
+                    </td>
+
+                    <td>
+                        SSC BOARD
+                    </td>
+
+                    <td>
+                        2023-2024
+                    </td>
+
+                    <td>
+                        <strong>85%</strong>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section dark">
+
+    <div class="section-title">
+
+        <p>04 / PROJECTS</p>
+
+        <h2>
+            Practical work &
+            <span>learning projects.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="projects-grid">
+
+
+        <div class="project-card">
+
+            <span>01 • WEB TECHNOLOGY</span>
+
+            <h3>
+                Personal Portfolio Website
+            </h3>
+
+            <p>
+                A responsive personal portfolio website created
+                using semantic HTML5 and CSS3.
+            </p>
+
+            <div class="tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Responsive</span>
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <span>02 • PYTHON</span>
+
+            <h3>
+                Python Programming Practice
+            </h3>
+
+            <p>
+                Basic Python programs focused on logic,
+                conditions, loops and problem solving.
+            </p>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>Logic</span>
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <span>03 • ACADEMIC</span>
+
+            <h3>
+                Assignments & Presentations
+            </h3>
+
+            <p>
+                Prepared academic assignments, practicals
+                and PowerPoint presentations.
+            </p>
+
+            <div class="tags">
+                <span>MS Word</span>
+                <span>PowerPoint</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ACTIVITIES ================= -->
+
+<section id="activities" class="section">
+
+    <div class="section-title">
+
+        <p>05 / EXTRACURRICULAR ACTIVITIES</p>
+
+        <h2>
+            Learning beyond the
+            <span>classroom.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="activities">
+
+
+        <div class="activity">
+
+            <div class="activity-name">
+                <span>01</span>
+                <h3>Sports</h3>
+            </div>
+
+            <p>
+                Participated in college sports and outdoor games.
+            </p>
+
+            <strong>
+                Developed teamwork, discipline and participation skills.
+            </strong>
+
+        </div>
+
+
+        <div class="activity">
+
+            <div class="activity-name">
+                <span>02</span>
+                <h3>Cultural Activities</h3>
+            </div>
+
+            <p>
+                Took part in college cultural programs and celebrations.
+            </p>
+
+            <strong>
+                Gained confidence and experience as a participant.
+            </strong>
+
+        </div>
+
+
+        <div class="activity">
+
+            <div class="activity-name">
+                <span>03</span>
+                <h3>Workshops</h3>
+            </div>
+
+            <p>
+                Attended workshops related to technology and
+                personal development.
+            </p>
+
+            <strong>
+                Learned new concepts and gained practical knowledge.
+            </strong>
+
+        </div>
+
+
+        <div class="activity">
+
+            <div class="activity-name">
+                <span>04</span>
+                <h3>Coding / Technical Events</h3>
+            </div>
+
+            <p>
+                Participated in basic coding activities and
+                technical events.
+            </p>
+
+            <strong>
+                Practised problem-solving and programming skills.
+            </strong>
+
+        </div>
+
+
+        <div class="activity">
+
+            <div class="activity-name">
+                <span>05</span>
+                <h3>Volunteering</h3>
+            </div>
+
+            <p>
+                Helped in college activities and group events
+                when required.
+            </p>
+
+            <strong>
+                Developed responsibility and cooperation.
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section contact">
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <p class="small-title">
+                06 / CONTACT
+            </p>
+
+            <h2>
+                Let's connect &
+                <span>create something useful.</span>
+            </h2>
+
+            <p>
+                Feel free to connect regarding academics,
+                projects or technology learning.
+            </p>
+
+
+            <div class="details">
+
+                <a href="mailto:Samruddhidhurai@gmail.com">
+                    ✉
+                    <span>
+                        <small>Email</small>
+                        Samruddhidhurai@gmail.com
+                    </span>
+                </a>
+
+
+                <a href="tel:9699432709">
+                    ☎
+                    <span>
+                        <small>Mobile</small>
+                        +91 9699432709
+                    </span>
+                </a>
+
+
+                <div>
+                    ⌖
+                    <span>
+                        <small>City</small>
+                        Ramtek, Maharashtra
+                    </span>
+                </div>
+
+
+                <div>
+                    ◷
+                    <span>
+                        <small>Date of Birth</small>
+                        12 August 2008
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+
+            <div class="footer-logo">
+                SD
+            </div>
+
+            <h3>
+                Samruddhi Dhurai
+            </h3>
+
+            <p>
+                IT Student • Ramtek, Maharashtra
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="social">
+
+            <a href="https://www.linkedin.com/in/samruddhi-dhurai-24969443b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+               target="_blank">
+                LinkedIn
+            </a>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <span>
+            © 2026 Samruddhi Dhurai. All Rights Reserved.
+        </span>
+
+        <a href="mailto:Samruddhidhurai@gmail.com">
+            Samruddhidhurai@gmail.com
+        </a>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
